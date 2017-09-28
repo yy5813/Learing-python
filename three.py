@@ -21,8 +21,15 @@
 # print add_end()
 # print add_end()
 
-def person(name,age,**kw):
-    return ('name:',name,'age:',age,'other:',kw)
-
-print person('Michael',30)
-print person('Bob',35, city='Beijing')
+# def person(name,age,**kw):
+#     return ('name:',name,'age:',age,'other:',kw)
+#
+# print person('Michael',30)
+# print person('Bob',35, city='Beijing',job='Engineer')
+nums = [1,2,3]
+def cals(*numbers):
+    sum = 0
+    for n in numbers:
+        sum =sum + n*n
+    return sum
+print cals(*nums)
