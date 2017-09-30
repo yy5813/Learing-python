@@ -42,15 +42,15 @@ def str2float(s):
     nums = map(lambda ch: CHAR_TO_FLOAT[ch], s)
     point = 0
     def to_float(f, n):
-        nonlocal point
+        nonlocal p
         if n == -1:
-            point = 1
+            p = 1
             return f
-        if point == 0:
+        if p== 0:
             return f * 10 + n
         else:
-            point = point * 10
-            return f + n / point
+            p = p * 10
+            return f + n / p
     return reduce(to_float, nums, 0.0)
 
 print(str2float('0'))
