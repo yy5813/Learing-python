@@ -12,33 +12,34 @@
 # s3 = r'Hello, "Bart"'
 # s4 = r'''Hello,
 # Lisa!'''
-n = 123
-print n
-f = 456.789
-print f
-s1 = '\'Hello, world\''
-print s1
-s2 = '\'Hello, \\\'Adam\\\'\''
-print s2
-s3 = 'r\'Hello, \"Bart\"\''
-print s3
-s4 = 'r\'\'\'Hello,\nLisa!\'\'\''
-print s4
-#python 练习
+# n = 123
+# print n
+# f = 456.789
+# print f
+# s1 = '\'Hello, world\''
+# print s1
+# s2 = '\'Hello, \\\'Adam\\\'\''
+# print s2
+# s3 = 'r\'Hello, \"Bart\"\''
+# print s3
+# s4 = 'r\'\'\'Hello,\nLisa!\'\'\''
+# print s4
+#python 练习3
 #小明的成绩从去年的72分提升到了今年的85分，请计算小明成绩提升的百分点，并用字符串格式化显示出'xx.x%'，只保留小数点后1位：
 # s1 = 72
 # s2 = 85
 # r =(s2-s1)*100/s1
 # print('%.1f%%' % r)
-#请用索引取出下面list的指定元素：
-# L = [
-#     ['Apple','Google','Microsoft'],
-#     ['Java','Python','Ruby','PHP'],
-#     ['Adam','Bart','Lisa']
-# ]
-# print L[0][0]
-# print L[1][1]
-# print L[2][2]
+#练习4
+# 请用索引取出下面list的指定元素：
+L = [
+    ['Apple','Google','Microsoft'],
+    ['Java','Python','Ruby','PHP'],
+    ['Adam','Bart','Lisa']
+]
+print L[0][0]
+print L[1][1]
+print L[2][2]
 #小明身高1.75，体重80.5kg。请根据BMI公式（体重除以身高的平方）帮小明计算他的BMI指数，并根据BMI指数：
 #
 #     低于18.5：过轻
