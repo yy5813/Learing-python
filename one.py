@@ -1,5 +1,30 @@
 #coding=utf-8
-#pyethon 练习
+#练习1
+#请利用print()输出1024 * 768 = xxx：
+#print '1024 * 768 =',1024*768
+
+#练习2
+#请打印出以下变量的值：
+# n = 123
+# f = 456.789
+# s1 = 'Hello, world'
+# s2 = 'Hello, \'Adam\''
+# s3 = r'Hello, "Bart"'
+# s4 = r'''Hello,
+# Lisa!'''
+n = 123
+print n
+f = 456.789
+print f
+s1 = '\'Hello, world\''
+print s1
+s2 = '\'Hello, \\\'Adam\\\'\''
+print s2
+s3 = 'r\'Hello, \"Bart\"\''
+print s3
+s4 = 'r\'\'\'Hello,\nLisa!\'\'\''
+print s4
+#python 练习
 #小明的成绩从去年的72分提升到了今年的85分，请计算小明成绩提升的百分点，并用字符串格式化显示出'xx.x%'，只保留小数点后1位：
 # s1 = 72
 # s2 = 85
