@@ -32,14 +32,19 @@
 # print('%.1f%%' % r)
 #练习4
 # 请用索引取出下面list的指定元素：
-L = [
-    ['Apple','Google','Microsoft'],
-    ['Java','Python','Ruby','PHP'],
-    ['Adam','Bart','Lisa']
-]
-print L[0][0]
-print L[1][1]
-print L[2][2]
+# L = [
+#     ['Apple','Google','Microsoft'],
+#     ['Java','Python','Ruby','PHP'],
+#     ['Adam','Bart','Lisa']
+# ]
+# #打印Apple
+# print L[0][0]
+# #打印Python
+# print L[1][1]
+# #打印Lisa
+# print L[2][2]
+
+#练习5
 #小明身高1.75，体重80.5kg。请根据BMI公式（体重除以身高的平方）帮小明计算他的BMI指数，并根据BMI指数：
 #
 #     低于18.5：过轻
@@ -63,10 +68,13 @@ print L[2][2]
 #     print '肥胖'
 # elif bmi > 32 :
 #     print '严重肥胖'
+
+#练习6
 #请利用循环依次对list中的每个名字打印出Hello, xxx!：
-# L = ['Bart','Lisa','Adam']
-# for l in L:
-#     print 'hello,',l
+L = ['Bart','Lisa','Adam']
+for l in L:
+    print 'hello,',l
+
 #请利用Python内置的hex()函数把一个整数转换成十六进制表示的字符串：
 # n1 = 255
 # n2 = 1000
