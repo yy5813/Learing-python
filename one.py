@@ -71,12 +71,19 @@
 
 #练习6
 #请利用循环依次对list中的每个名字打印出Hello, xxx!：
-L = ['Bart','Lisa','Adam']
-for l in L:
-    print 'hello,',l
+# L = ['Bart','Lisa','Adam']
+# for l in L:
+#     print 'hello,',l
+
+#把(1, 2, 3)和(1, [2, 3])放入dict或set中
+# a = ('a','b','c')
+# b = ('a',['b','c'])
+# dict1 = {a:"hello"}
+# dict2 = {b:"hello"}
+# print dict1[a]
 
 #请利用Python内置的hex()函数把一个整数转换成十六进制表示的字符串：
-# n1 = 255
-# n2 = 1000
-# print hex(n1)
-# print hex(n2)
+n1 = 255
+n2 = 1000
+print hex(n1)
+print hex(n2)
