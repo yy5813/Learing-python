@@ -90,27 +90,37 @@ import functools
 # now()
 
 #练习 能否写出一个@log的decorator，使它既支持@log有支持@log('execute')
-def log(text):
-    if callable(text) == False:
-        def decorator(func):
-            @functools.wraps(func)
-            def wrapper(*args,**kw):
-                print ('%s %s():' %(text, func.__name__))
-                return func(*args,**kw)
-            return wrapper
-        return decorator
-    else:
-        @functools.wraps(text)
-        def wrapper2(*args,**kw):
-            print ('call %s():' % text.__name__)
-            text(*args,**kw)
-        return wrapper2
-@log
-def now():
-    print ('2017-10-18')
-@log('execute')
-def now2():
-    print ('2017-10')
-# print now.__name__
-print now()
-print now2()
+# def log(text):
+#     if callable(text) == False:
+#         def decorator(func):
+#             @functools.wraps(func)
+#             def wrapper(*args,**kw):
+#                 print ('%s %s():' %(text, func.__name__))
+#                 return func(*args,**kw)
+#             return wrapper
+#         return decorator
+#     else:
+#         @functools.wraps(text)
+#         def wrapper2(*args,**kw):
+#             print ('call %s():' % text.__name__)
+#             text(*args,**kw)
+#         return wrapper2
+# @log
+# def now():
+#     print ('2017-10-18')
+# @log('execute')
+# def now2():
+#     print ('2017-10')
+# # print now.__name__
+# print now()
+# print now2()
+
+
+
+print int('100000',base = 2)
+int2 =  functools.partial(int,base = 2)
+print int2('100000')
+
+print max(2,3,4,5,6,7)
+max2 = functools.partial(max,10)
+print max2(2,3,4,5,6,7)
