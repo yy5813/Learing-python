@@ -50,8 +50,52 @@ class Fibt(object):
                     L.append(a)
                 a,b = b,a+b
             return L[start:stop:step]
-f = Fibt()
-print f[0]
-print f[0:5]
-print f[:10]
-print f[:10:2]
+# f = Fibt()
+# print f[0]
+# print f[0:5]
+# print f[:10]
+# print f[:10:2]
+
+class Student1(object):
+    def __init__(self):
+        self.name = 'Michael'
+
+    def __getattr__(self,attr):
+        if attr == 'score':
+            return 99
+
+        if attr == 'age':
+            return lambda:25
+
+        raise AttributeError('\'Student1\' object has no attribute \'%s\'' %attr)
+
+# s = Student1()
+# print s.name
+# print s.score
+# print s.age()
+# print s.hige
+
+class Chain(object):
+
+    def __init__(self,path=''):
+        self._path = path
+
+    def __getattr__(self,path):
+        return Chain('%s/%s' % (self._path, path))
+
+    def __str__(self):
+        return self._path
+
+    __repr__ = __str__
+
+# print Chain().status.user.timeline.list
+
+class Student2(object):
+    def __init__(self,name):
+        self.name = name
+
+    def __call__(self):
+        print('My name is %s.' % self.name)
+
+s = Student2('Michael')
+s()
